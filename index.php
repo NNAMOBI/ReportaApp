@@ -1,3 +1,43 @@
+<?php
+ session_start();
+
+ 
+ include("create.php") ;   //Require the database connection
+//  include("helpers/functions.php");
+
+    //    $connection = connection();         //invoke the function to connect to the database
+    //   if($connection) {
+        //   echo "there is connection";
+        // if($_SERVER['REQUEST_METHOD'] == "POST")
+
+    if(isset($_POST['create-button'])){
+//     createRecord();
+
+ {
+      //Something was posted  and Storing the userinput into variables
+        $companyName = $_POST['create-name'];
+        $email = $_POST['create-email'];
+        $phoneNo = $_POST['create-phoneNo'];
+        $password = $_POST['create-password'];
+
+        //server validation
+      if(!empty($companyName) && !empty($password) && !is_numeric($companyName))
+      {
+           //save to database
+        //    echo "data is here";
+           createRecord($companyName, $email,$phoneNo, $password);
+
+      }else {
+          echo "Please enter some valid information!";
+      }
+ }
+      }
+    // }
+ 
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +54,7 @@
 <!-- body starts here -->
 <body>
  <!-- require php file create.php -->
- <?php require_once 'create.php' ?>     
+    
 
     <!-- header starts here -->
     <header>
@@ -73,7 +113,7 @@
             
                     <!-- the right section -->
                 </div class=row-right> 
-                <form action="create.php" method="POST" id=company-form>
+                <form action="index.php" method="POST" id=company-form>
                     <label for="fname">CompanyName</label>
                     <input type="text"  name="create-name"  class="text-field" required><br>
                     <label for="lname">Email</label>
