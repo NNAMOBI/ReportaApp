@@ -1,0 +1,227 @@
+/* Universal selector */
+* {
+    margin: 1px auto;
+    padding: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+/* body is styled here */
+body {
+    font-family: 'Vesper Libre';
+    
+}
+
+/* header style */
+header {
+    width: 100vw;
+    /* height: 100vw; */
+    /* border: 2px solid red; */
+
+}
+
+
+/* Nav bar style  right element*/
+#nav-links { 
+    width: 90%;
+    /* height: 30px; */
+    padding: 50px auto;
+    text-align: end;
+  
+ } 
+
+ /* css for the R-LOGO */
+ #logo .logo-design{
+    width: 90%;
+    margin: auto 70px;
+    text-align: start;
+    color: #EB5757;
+    position: absolute;
+    top: 0.2px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 78px;
+    /* z-index: -1; */
+    
+ }
+
+ /* CSS for the reporta design text */
+ #logo .reporta-text{
+    width: 90%;
+    margin: auto 70px;
+    position: absolute;
+    bottom: 700px;
+    text-align: start;
+    color: #EB5757;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    /* z-index: -1; */
+    
+ }
+
+ /* a call data tracker paragraph style */
+ header p {
+     color: #EB5757;
+     margin: 20px 70px;
+     position: relative;
+     top: 25px;
+     font-family: 'Italianno', cursive;
+     font-size: 20px;
+     font-weight: 800;
+     
+ }
+
+ /* h1 styles */
+ main h1 {
+     color: black;
+     font-weight: 100;
+     font-size: 35px;
+     margin: 50px auto;
+     text-shadow: 4px 4px 4px;
+     font-family: 'Roboto Slab', serif;
+ }
+
+/* list item on the nav bar */
+header .right-nav ul li{
+    display: inline;
+}
+
+/* list item on the left-nav bar(logo) */
+ /* #logo{
+    
+} */
+
+/* styling the anchor tag for the nav bar */
+header nav ul li a {
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 15px;
+    color: #714B4F;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* color: crimson; */
+}
+
+
+.section-begin {
+    
+    width: 100vw;
+    height: 90vh;
+}
+
+/* the container div for the left box and the right box */
+.container {
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* row-left style */
+.row-left {
+    width: 50%;
+    height: 700px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: fantasy;
+    letter-spacing: 0.8;
+    /* line-height: 200%; */
+    color:black;
+}
+
+/* row-right */
+.row-right {
+    border: 2px solid blue;
+    width: 50%;
+    height: 900px;
+    margin-left: 6%;
+    
+}
+
+/* styling the form */
+ #company-form {
+    background: #EAB6B6;
+    margin: 0px 80px;
+    width: 40%;
+    height: 380px;
+    text-align: start;
+    align-items: center;
+    padding: 25px;
+}
+
+/* styling the input */
+.text-field, h5 {
+
+    display: block;
+    width: 60%;
+    height: 8%;
+    margin: auto 35%;
+    border: none;
+    padding: auto;
+    
+}
+
+/* styling the button */
+button {
+   width: 50%;
+   height: 30px;
+   margin: 10px 35%;
+   border: none;
+   background-color: #EB5757;
+   color: white;
+   font-family: 'Ubuntu Mono', monospace;
+   font-size: 15px;
+
+
+}
+
+h5 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10px;
+    margin: 1px 70%;
+}
+
+label {
+    font-family: 'Ubuntu Mono', monospace;
+    position: relative;
+    top: 25px;
+}
+
+h6 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2;
+    margin: auto 35%;
+    
+}
+
+.login {
+    color:#EB5757;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 118px;
+    bottom: 12px;
+    
+}
+
+.register {
+ color: #EB5757;
+ font-family: 'Kadwa', serif;
+ font-weight: 900;
+ letter-spacing: 2px;
+}
+
+img.img-pic {
+   position: relative;
+   right: 80px;
+}
+
+
+span.material-icons {
+    position: relative;
+    left: 400px;
+    bottom: 25px;
+}
