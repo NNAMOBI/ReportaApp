@@ -1,0 +1,152 @@
+/*
+Name:Yayra Etsa Kaledzi 
+studentId:2002609
+dept:IT/BI
+course:CMM004-Software Project Engineering
+
+*/
+
+  
+
+*{
+    box-sizing: border-box
+
+
+
+
+}
+
+
+
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background:#f6f6f6;
+}
+
+
+header {
+    background: white;
+    height: 66px;
+}
+
+header  {
+    color: #e75757;
+    font-family:'Vesper libre';
+}
+
+
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+
+ header .logo-design {
+    width: 90%;
+    margin: auto 70px;
+    /* text-align: start; */
+    color: #EB5757;
+    position: absolute;
+    top: 0.2px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 78px;
+    margin-left: 6%;
+    padding-bottom: 30px;
+ }
+    
+
+header .logo-text {
+    margin:9px;
+    font-family:'Poppins',sans-serif;
+        width: 90%;
+        margin: auto 70px;
+        position: absolute;
+        bottom: 700px;
+        text-align: start;
+        color: #EB5757;
+        font-size: 28px;
+        font-weight: lighter;
+padding-left: 80px;
+padding-bottom:14px;
+
+
+}
+
+
+
+
+
+
+
+header ul {
+    float: right;
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+header ul li{
+ float:left;
+ position: relative;
+}
+
+header ul li ul{
+   position: absolute;
+   top: 66px;
+   right: 0px; 
+   width: 180px;
+   display: none;
+}
+
+header ul li:hover ul {
+    display:block;
+}
+
+header ul li ul li{
+    width: 100%
+}
+
+header ul li ul li a{
+    padding: 10px;
+    background: white;
+    color:#444;
+}
+
+header ul li ul li a.logout {
+    color:#714B4F;
+}
+
+header ul li ul a:hover{
+    background:rgb(219, 189, 189);
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 15px;
+    color:#e75757;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+
+
+
+
+
+
+header ul li a:hover {
+ background:rgb(219, 189, 189);
+ transition: 0.5s;
+}
+
+header .menu-toggle{
+  display: none;  
+}
