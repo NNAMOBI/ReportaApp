@@ -24,17 +24,20 @@ body{
     padding: 0px;
     margin: 0px;
     background:#f6f6f6;
+ 
 }
 
 
 header {
     background: white;
-    height: 66px;
+    height: 77px;
+   
 }
 
 header  {
     color: #e75757;
     font-family:'Vesper libre';
+    
 }
 
 
@@ -43,6 +46,7 @@ header .logo{
     float: left;
     height: inherit;
     margin-left: 2em;
+   
 }
 
 
@@ -75,6 +79,7 @@ padding-left: 80px;
 padding-bottom:14px;
 
 
+
 }
 
 
@@ -88,11 +93,14 @@ header ul {
     margin:0px;
     padding:0px;
     list-style: none;
+    
+    
 }
 
 header ul li{
  float:left;
  position: relative;
+
 }
 
 header ul li ul{
@@ -118,8 +126,9 @@ header ul li ul li a{
 }
 
 header ul li ul li a.logout {
-    color:#714B4F;
+    color: #EB5757;
 }
+
 
 header ul li ul a:hover{
     background:rgb(219, 189, 189);
@@ -150,3 +159,87 @@ header ul li a:hover {
 header .menu-toggle{
   display: none;  
 }
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:750px) {
+    header {
+        position: relative;
+    }
+    
+    header ul {
+      width: 100%;  
+      background:rgb(219, 189, 189);
+      max-height: 0px;
+      overflow: hidden;
+    }
+    .showing {
+      max-height: 100em;  
+    }
+    header ul li{
+       width: 100%;
+       
+      }
+      header ul li ul {
+        position: static; 
+        display: block;
+        width: 100%;
+        
+     }   
+
+     header ul li ul li a{
+        padding: 10px;
+        background:rgb(219, 189, 189);
+     color:white;
+     padding-left: 50px;
+    }
+    header ul li ul li a:hover {
+        background: #EB5757;
+    }
+
+
+    header ul li ul li a.logout {
+        color: #EB5757;
+    }
+    header .menu-toggle{
+        display: block;  
+        position:absolute;
+        right: 20px;
+        top: 29px;
+        font-size:1.9em;
+      }
+      header .logo{
+        float: left;
+        height: inherit;
+        margin-left: .5em;
+       
+    }
+    header .logo-text {
+        margin:9px;
+        font-family:'Poppins',sans-serif;
+            width: 90%;
+            margin: auto 70px;
+            position: absolute;
+            bottom: 700px;
+            text-align: start;
+            color: #EB5757;
+            font-size: 28px;
+            font-weight: lighter;
+    padding-left: 80px;
+    padding-bottom:14px;
+    
+    
+    
+    }
+    
+    
+    
+    
+        
+
+}
+
+
+
+
+
