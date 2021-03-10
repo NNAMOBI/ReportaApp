@@ -312,21 +312,21 @@ h1.recent-post-title {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background: #EAB6B6;;
 }
 
 .content .sidebar .section .section-title {
     margin :10px 0px 10px 0px;
 }
 
-
+.content .sidebar .section.search{
+margin-top: 80px;
+}
 
 .content .sidebar .section.topics ul{
  margin: 0px;
  padding: 0px;
  list-style: none;
- border-top:1px solid #e0e0e0;
- 
+ border-top:1px solid #e0e0e0
 }
 
 .content .sidebar .section.topics ul li a{
@@ -335,24 +335,30 @@ h1.recent-post-title {
 border-bottom :1px solid #e0e0e0;
 transition: all 0.3s;
 
-
 }
 
 .content .sidebar .section.topics ul li a:hover {
   padding-left: 10px;
   transition: all 0.3s;
-
-
 }
 
+/* AUTH PAGES */
 
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
 
+.auth-content .form-title {
+   text-align: center; 
+}
 
-
-
-
-
-
+.auth-content form div {
+    margin-bottom:10px;
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width:750px) {
