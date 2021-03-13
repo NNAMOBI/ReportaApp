@@ -1,3 +1,18 @@
+<!-- 
+Name:Yayra Etsa Kaledzi 
+studentId:2002609
+dept:IT/BI
+course:CMM004-Software Project Engineering
+ -->
+
+<!-- 
+Name:Muktar Oyinlola Olatinwo
+studentId:2015046
+dept:IT/OIL AND GAS
+course:CMM004-Software Project Engineering
+ -->
+
+
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 @media(min-width:768px) {
     body {
@@ -42,6 +57,7 @@
     padding-bottom: 20px;
     line-height: 20px;
     color: #fff;
+    
 }
 
 .top-nav>li>a:hover,
@@ -49,8 +65,11 @@
 .top-nav>.open>a,
 .top-nav>.open>a:hover,
 .top-nav>.open>a:focus {
-    color: #fff;
-    background-color: #1a242f;
+    /* color: #fff; */
+    color: burlywood;
+    /* background-color: #1a242f; */
+     background-color: white;
+
 }
 
 .top-nav>.open>.dropdown-menu {
@@ -61,8 +80,8 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: #fff;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    /* -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+    /* box-shadow: 0 6px 12px rgba(0,0,0,.175); */
 }
 
 .top-nav>.open>.dropdown-menu>li>a {
@@ -82,8 +101,9 @@
         border-radius: 0;
         border-top: 1px rgba(0,0,0,.5) solid;
         overflow-y: auto;
-        background-color: #222;
-        /*background-color: #5A6B7D;*/
+        /* background-color: #222; */
+        /* background-color: #5A6B7D; */
+        background-color: #EB7575;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
@@ -97,7 +117,7 @@
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #1a242f !important;
+        background-color: #EB7575 !important;
     }
 }
 
@@ -111,7 +131,8 @@
     padding: 10px 15px 10px 38px;
     text-decoration: none;
     /*color: #999;*/
-    color: #fff;    
+    color: #fff;
+    background-color: #EB7575;    
 }
 
 .side-nav>li>ul>li>a:hover {
@@ -125,7 +146,7 @@
   position: absolute;
   top: 14px;
   right: 6px;
-  font-size: 10px;
+  font-size: 30px;
   font-weight: normal;
   min-width: 15px;
   min-height: 15px;
@@ -141,3 +162,6 @@
 .navbar-brand {
     padding: 5px 15px;
 }
+
+
+

@@ -1,3 +1,10 @@
+<!-- 
+Name:Yayra Etsa Kaledzi 
+studentId:2002609
+dept:IT/BI
+course:CMM004-Software Project Engineering
+ -->
+
 $(function(){
     $('[data-toggle="tooltip"]').tooltip();
     $(".side-nav .collapse").on("hide.bs.collapse", function() {                   

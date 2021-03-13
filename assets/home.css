@@ -21,6 +21,7 @@ course:CMM004-Software Project Engineering
     padding: .7rem 1rem;
     display: block;
     width: 100%;
+    font-size: 10px;
     
    
 
@@ -224,7 +225,7 @@ header .menu-toggle{
 
 h1.recent-post-title {
     color: #EB5757;
-     margin: 20px 70px;
+     margin: 2px 70px;
      position: relative;
      top: 25px;
      font-family: 'Italianno', cursive;
@@ -242,14 +243,16 @@ h1.recent-post-title {
     text-decoration: none;
 }
 
-.post .register-with h1 a {
+.post .register-with h1 {
     color: #EB5757;
-    font-family: 'Kadwa', serif;
+   font-family: 'Italianno', cursive;
     font-weight: 150;
     letter-spacing: 1px;
     text-decoration: none;
     margin-bottom: auto 0px;
-    font-size: small;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: -150px;
 }
 
 
@@ -281,14 +284,19 @@ h1.recent-post-title {
 .content .main-content .post .post-image {
   width: 40%;
   height: 100%;
-  float: left;
+  
 }
 
 
 
 #post .img-pic {
     position: relative;
-    right: 200px;
+    width: 600px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -70px;
+
+
     
  }
 
@@ -326,6 +334,7 @@ h1.recent-post-title {
  padding: 0px;
  list-style: none;
  border-top:1px solid #e0e0e0;
+
  
 }
 
@@ -345,6 +354,32 @@ transition: all 0.3s;
 
 }
 
+button{
+  padding:0 10px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color:#FFFFFF;
+  text-shadow:0 1px #4D1124;
+  border-width: 1px;
+  border-style: solid;
+  border-color:#693647;
+  border-radius: 7px 7px 7px 7px;
+  outline: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: #EB5757;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #AA1E4D), color-stop(100%, #7D0F33));
+  background-image: -webkit-linear-gradient(top, #AA1E4D, #EB5757);
+  background-image:-moz-linear-gradient(center top , #AA1E4D, #EB5757)
+  background-image: -ms-linear-gradient(top, #AA1E4D, #EB5757);
+  background-image: -o-linear-gradient(top, #AA1E4D, #EB5757);
+  background-image: linear-gradient(top, #AA1E4D, #EB5757);
+  -webkit-box-shadow:0 1px #CD4170 inset, 0 1px 2px #93284C;
+  -moz-box-shadow:0 1px #CD4170 inset, 0 1px 2px #93284C;
+  box-shadow:0 1px #CD4170 inset, 0 1px 2px #93284C;
+}
 
 
 
@@ -412,7 +447,7 @@ transition: all 0.3s;
         font-family:'Poppins',sans-serif;
             width: 90%;
             margin: auto 70px;
-            position: absolute;
+            position: relative;
             bottom: 700px;
             text-align: start;
             color: #EB5757;
@@ -420,6 +455,7 @@ transition: all 0.3s;
             font-weight: lighter;
     padding-left: 80px;
     padding-bottom:14px;
+    padding-top: 25px;
     
     
     
