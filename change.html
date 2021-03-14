@@ -21,7 +21,10 @@ course:CMM004-Software Project Engineering
      <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
      <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  
   <title>Login</title>
+
      
  <!--Custom Styling-->
  <link rel="stylesheet" href="assets/login.css">
@@ -33,19 +36,23 @@ course:CMM004-Software Project Engineering
          <div class="container">
             <section class="register">
               <h1>Change Password</h1>
-              <form method="post" action="index.html">
+
+              <form id="change-pass" method="POST" autocomplete="off" action="change.html">
               <div class="reg_section personal_info">
               <h3>Password</h3>
-              <input type="text" name="email" value="" placeholder="Password">
+              <input type="password" name="email" value="" class="password" placeholder="Password">
               </div>
          <div class="reg_section password">
               <h3>Confirm Password</h3>
-              <input type="password" name="password" value="" placeholder="Confirm Password">
+              <input type="password" name="password" value=""  class="confirmPassword"placeholder="Confirm Password">
             
-              <p class="submit"><input type="submit" name="commit" value="Login"></p>
+              <p class="submit"><input autocomplete= "off" type="submit" name="commit" value="Login"></p>
               </form>
             </section>
           </div>
+          <script src="js/changePass.js"></script>   <!--change password script-->
+              
+
 
  </body>
  </html>
