@@ -27,8 +27,8 @@
         <thead class="bg-primary">
             <tr>  
                  <th>Title</th>                
-                  <th>Action</th>
-                   <th>AllowComments</th>
+                  
+                   <th>Action</th>
             </tr>
         </thead>
         <tbody class="table-hover bg-light text-dark category-list">
