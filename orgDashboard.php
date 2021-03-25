@@ -81,15 +81,18 @@
 <table class="table table-bordered">
 <thead class="bg-success text-center">
 <tr class="text-white">  
-   <th>History_id</th>
-   <th>Call_id</th>                
+   <th>Call_id</th>
+   <th>Reason_terminated</th>                
     <th>Time_start</th>
-    <th>Time_answered</th>
+    <th>Time_end</th>
+    <th>Time-answered</th>
     <th>From_no</th>
     <th>To_no</th>
+    <th>From_dn</th>
+    <th>To_dn</th>
     <th>Date</th>
-
-     <th>AllowComments</th> 
+   <th>Action</th> 
+   
 </tr>
 </thead>
 <tbody class="text-center">
@@ -99,6 +102,7 @@
    <td></td>
    <td></td>
    <td></td>
+
    <td class="d-flex">
       <a href="/api/user/posts/edit/{{this.id}}" class="btn btn-sm btn-warning mr-2">Edit Post</a> <!--bootstrap-->
   <form action="/api/admin/post/delete/{{this.id}}?newMethod=DELETE" method="POST">
@@ -106,8 +110,36 @@
   </form>
 
    </td>
+
+
+
+
+
+
+   
+
     
-     <th>True</th> 
+     <th></th> 
+     <th></th>
+     <th></th>
+     <th></th>
+     <th> 
+
+
+     <td class="d-flex">
+      <a href="/api/user/posts/edit/{{this.id}}" class="btn btn-sm btn-warning mr-2">Edit Post</a> <!--bootstrap-->
+  <form action="/api/admin/post/delete/{{this.id}}?newMethod=DELETE" method="POST">
+  <button class="btn btn-sm btn-danger" type="submit">Delete Post</button>
+  </form>
+
+   </td>
+
+
+
+
+
+     </th>
+     
 </tr>
 
 </tbody>

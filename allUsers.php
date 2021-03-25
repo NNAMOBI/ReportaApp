@@ -27,7 +27,8 @@
         <thead class="bg-primary">
             <tr>  
                  <th>Title</th>                
-                   <th>AllowComments</th>
+
+                
                    <th>Action</th>
             </tr>
         </thead>
