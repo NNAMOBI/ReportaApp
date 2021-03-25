@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include("header.php") ?>
+</head>
+<body>
 <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion" style="background-color: #EB5757; color: white;" id="sidenavAccordion">
@@ -19,8 +24,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="/api/admin/posts/all/{{id}}">All Users</a>
-                                    <a class="nav-link" href="/api/admin/posts/create/{{id}}">Create New User</a>
+                                    <a class="nav-link" href="">All Users</a>
+                                    <a class="nav-link" id="create-user" href="">Create New User</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -64,3 +69,6 @@
                     </div>
                 </nav>
             </div>
+            <script src="js/dashboard.js"></script>
+</body>
+</html>

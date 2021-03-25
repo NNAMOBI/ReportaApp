@@ -138,6 +138,6 @@
         </div>
         
    <?php include("script.php") ?>        <!--all scripts-->
-   
+   <script src="js/dashboard.js"></script>
 </body>
 </html>

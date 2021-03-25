@@ -22,7 +22,7 @@
          <form action="/api/admin/post/submit/{{id}}" method="POST" enctype="multipart/form-data" style="width: 50%; margin: 1px auto;" >
              <div class="form-group">
                  <label for="title">Name</label>
-                 <input type="text" class="form-control" name="title" id="title" placeholder="Enter the title">
+                 <input type="text" class="form-control" name="title" id="name-title" placeholder="Enter the title">
              </div>
              <!-- first input ends here -->
              <div class="form-group">
@@ -61,6 +61,7 @@
  </div>
 
 </div>
-       <?php include("script.php") ?>   <!--all scripts-->
+       <!--   all scripts -->
+       <!-- <script src="js/createUser.js"></script> -->
 </body>
 </html>

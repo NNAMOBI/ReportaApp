@@ -27,14 +27,15 @@
         <thead class="bg-primary">
             <tr>  
                  <th>Title</th>                
-                  <th>Action</th>
                    <th>AllowComments</th>
+                   <th>Action</th>
             </tr>
         </thead>
         <tbody class="table-hover bg-light text-dark category-list">
            
          <tr>
                  <td>title</td>
+                 <td>True</td> 
                  <td class="d-flex justify-content-center">
                     <a href="/api/admin/category/edit/{{this.id}}" class="btn btn-sm btn-warning mr-2">Edit Category</a> <!--bootstrap-->
                 <form action="/api/admin/category/{{this.id}}?_Method=DELETE" method="POST">
@@ -43,7 +44,7 @@
 
                  </td>
                   
-                 <th>True</th> 
+                
         </tr>
      
         </tbody>
