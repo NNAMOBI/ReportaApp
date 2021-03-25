@@ -21,13 +21,13 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Dashboard</h1>
+                        <h1 class="mt-4">Welcome Admin</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active" style="color:red;">YOUR DATA</li>
                         </ol>
                         <div class="row">
                             <div class="col-xl-4 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
+                                <div class="card bg-primary text-white mb-4 color">
                                     <div class="card-body">Call details records</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
@@ -74,18 +74,21 @@
             
 <div class="container">
 <div class="alert alert-secondary text-center">   <!--bootstrap-->
-<h5>ALL POSTS</h5>
+<h5>ALL CDRS</h5>
 </div>
 <!--first div ends here-->
 
 <table class="table table-bordered">
 <thead class="bg-success text-center">
 <tr class="text-white">  
-   <th>id</th>
-   <th>Title</th>                
-    <th>Description</th>
-    <th>status</th>
-    <th>Actions</th>
+   <th>History_id</th>
+   <th>Call_id</th>                
+    <th>Time_start</th>
+    <th>Time_answered</th>
+    <th>From_no</th>
+    <th>To_no</th>
+    <th>Date</th>
+
      <th>AllowComments</th> 
 </tr>
 </thead>

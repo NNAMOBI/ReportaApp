@@ -14,14 +14,27 @@
                 </div>
             </form>
             <!-- Navbar-->
-            <ul class="navbar-nav ml-auto ml-md-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="userDropdown" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="">Settings</a>
-                        <a class="dropdown-item" href="">Activity Log</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="login.html">Logout</a>
+            <!-- <ul class="navbar-nav ml-auto ml-md-0"> -->
+                <!-- <li class="nav-item dropdown"> -->
+                    <!-- <a class="nav-link dropdown-toggle" id="userDropdown" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a> -->
+                    <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> -->
+                        <!-- <a class="dropdown-item" href="">Setting</a> -->
+                        <!-- <a class="dropdown-item" href="">Activity Log</a> -->
+                        <!-- <div class="dropdown-divider"></div> -->
+                        
+                          <!-- <a class="dropdown-item" href="login.html">Logout</a>  --> -->
+                         
+                          <i class="fa fa-user"></i>
+     
+     <i class="fa fa-chevron-down"style="font-size:.8em;"></i>
+    </a>
+    <ul>
+ 
+     <li><a href="#">Admin</a></li>
+     <li><a href="#" class="nav-item logout">Logout</a></li>
+ 
+ 
+ 
                     </div>
                 </li>
             </ul>
