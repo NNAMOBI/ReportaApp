@@ -103,13 +103,7 @@
    <td></td>
    <td></td>
 
-   <td class="d-flex">
-      <a href="/api/user/posts/edit/{{this.id}}" class="btn btn-sm btn-warning mr-2">Edit Post</a> <!--bootstrap-->
-  <form action="/api/admin/post/delete/{{this.id}}?newMethod=DELETE" method="POST">
-  <button class="btn btn-sm btn-danger" type="submit">Delete Post</button>
-  </form>
-
-   </td>
+   <td></td>
 
 
 
@@ -170,6 +164,6 @@
         </div>
         
    <?php include("script.php") ?>        <!--all scripts-->
-   <script src="js/dashboard.js"></script>
+   <!-- <script src="js/dashboard.js"></script> -->
 </body>
 </html>

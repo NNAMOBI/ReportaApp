@@ -24,13 +24,10 @@
                             </a>
                             <div class="collapse" id="collapseLayouts"   aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-<<<<<<< HEAD
                                     <a class="nav-link" href="">All Users</a>
-                                    <a class="nav-link" id="create-user" href="">Create New User</a>
-=======
-                                    <a class="nav-link" href="/api/admin/posts/all/{{id}}" style="color: white">All Users</a>
-                                    <a class="nav-link" href="/api/admin/posts/create/{{id}}" style="color: white">Create New User</a>
->>>>>>> a5eb83a8e6b1f2327d597c7b2831b3b7f2f6cc6b
+                                    <a class="nav-link" id="create-user" href="">Create New User</a
+                                  
+
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse"  style="color: white"  data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
