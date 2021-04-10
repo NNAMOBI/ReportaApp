@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- header for the admin page -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/login.css" type="text/css">
+<link rel="stylesheet" href="/css/register.css" type="text/css">
+<link rel="stylesheet" href="assets/admin.css" type="text/css">
+<link href="css/styles.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/blog-home.css" rel="stylesheet">
+    <title>Users</title>
+</head>
+<body>
+       <?php include("navbar.php") ?>
+    <!-- side bar start-->
+  
+    
+        
+        <!-- side nav starts here -->
+         <?php include("sideNav.php") ?>
+    <!-- side bar end-->
+<div class="container">
+    
+ <h3 style="text-align: center;">Create New User</h3>
+   
+ <div class="row p-2">
+     <div class="col-sm-10">
+         <form action="" id="createUser-form" method="POST" enctype="multipart/form-data" style="width: 50%; margin: 1px auto;" >
+             <div class="form-group">
+                 <label for="title">Name</label>
+                 <input type="text" class="form-control name" name="title" id="name-title" placeholder="Enter the title">
+             </div>
+             <!-- first input ends here -->
+             <div class="form-group">
+                 <label for="title">Email</label>
+                 <input type="email" class="form-control email" name="title" id="email-title" placeholder="Enter the title">
+             </div>
+             
+             <div class="form-group">
+                 <label for="title">Phone</label>
+                 <input type="text" class="form-control phone" name="title" id="phone-title" placeholder="Enter the title">
+             </div>
+
+            <div class="form-group">
+           <label for="file">Image Upload</label>
+           <input type="file" class="form-control file" id="file" name="uploadedFile">
+
+            </div>
+
+              <div class="form-group">
+                 <label for="status">status</label>
+                 <select id="status" name="status" class="form-control status">
+                     <option value="Supervisor">Supervisor</option>
+                     <option value="staff">Employee</option>
+                     <option value="assistant Supervisor">Assistant Supervisor</option>
+                     </select>
+             </div>
+               
+
+               <button type="submit" class="btn btn-outline-success btn-lg">
+                   Create User
+               </button>
+
+         </form>
+     </div>
+
+ </div>
+
+</div>
+       <!--   all scripts -->
+       <!-- third-party libraries -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+ <script src="js/scripts.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+ <script src="assets/demo/chart-area-demo.js"></script>
+ <script src="assets/demo/chart-bar-demo.js"></script>
+ <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+ <script src="assets/demo/datatables-demo.js"></script>
+       <script src="js/createUser.js"></script>
+</body>
+</html>

@@ -2,43 +2,41 @@
 
 
 
-    $( ":submit" ).click(function(ev) {   //using jquery to select the input type submit button
-        
+    $( ":submit" ).click(function(ev) {   //using jquery to select the input type submit button   
       try {
         //prevent default action by form
         ev.preventDefault();
         //jquery to select form input
           let email = document.querySelector('#log-form .email').value;
-          let password = document.querySelector('#log-form .password').value;
-          let confirmPassword = document.querySelector('#log-form .confirmPassword').value;
-             
+          // let password = document.querySelector('#log-form .password').value;
+          let password = $('#log-form .password').val() 
+             console.log(email)
           let userData = {
             email,
-            password,
-            confirmPassword
+            password
           }
+
+          console.log(userData)
             //AJAX call to the login route / CMS backend
             const endpoint = "http://localhost:5000/api/org/login"; //login url
         //invoking the function to post login input
           postData(endpoint, userData)
           .then((data) => {
-         if(data) { 
+         if(data.data.accessToken) { 
           console.log(data);
-          swal(data)
-            // swal("please see your system administrator" ,"or Visit the home page to register", "success")
-        //  localStorage.setItem('token', data.data.accessToken);// set the token for the session in the local storage       
+         localStorage.setItem('token', data.data.accessToken);// set the token for the session in the local storage       
     //redirect the user to the dashboard where he can view post after login successful 
-
-        //  window.location.href = "http://localhost:8080/cmsapp/admin/posts/index.php";
+       console.log("token:->", data.data.accessToken)
+        window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/orgDashboard.html"
         }else {        
           
             console.log("route to home page");
-        //  window.location.href = "http://localhost:8080/cmsapp/normalUser.php";      
+         window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/home.html"     
         }
      })
     }catch(err){
-      console.error(err.error);
-         return error;
+      console.error(err);
+         
       }
     })
     
