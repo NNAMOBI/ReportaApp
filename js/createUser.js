@@ -3,37 +3,56 @@
 
 $(document).ready(function () {
 
-    console.log("i am here");
+  console.log('All assets are loaded')
+    const bearer = localStorage.getItem('token')   //get token to create a session and authorization from the backend
+   console.log(bearer);
+   if(!bearer) {
+    window.location.href = "http://localhost:8080/reportaApp/ReportaApp/home.html"; //route the user to home page if no token
+   }else {
     $(':submit').click(function(e){ 
-        console.log('i have clicked on the button') 
-    e.preventDefault();   // prevent the default action of the page
-  let data = $('#name-title').val() 
-  console.log(data) //get the value from the input
-const payload = { title: data };
-  const url = `http://localhost:5000/api/authUser/token?token=${myParam}`
+      e.preventDefault();   // prevent the default action of the page
+              console.log('i have clicked on the button')
+              let name = $('#createUser-form .name').val() 
+              let email = $('#createUser-form .email').val()
+              let phone = $('#createUser-form .phone').val()
+              let file = $('#createUser-form .file').val()
+              let status = $('#createUser-form .status').val()
+     
+       let data = {
+         name,
+         email,
+         phone,
+         file,
+         status
+       }
 
-                  postData(url, payload )
-                      .then((data) => {
-                        console.log("data" , data)
-                             if(!data.data){
-                               console.log(data.data)
-                              console.log("->:", "route to home page")
-                //   window.location.href = "http://localhost:8080/reportaApp/ReportaApp/home.html";
-    
-                    }else if(data.data.includes("successful")) {
-                        //    console.log("->: route to login page", data, data.data)
-                //  window.location.href = "http://localhost:8080/reportaApp/ReportaApp/login.html";
-    
-                           }else{
-                        //  console.log("your password is not matching");
-                            //   swal(data.data);
-                               }
-}).catch((err)=>{
-    console.log(err.message)
-})
+         
+  const url = `http://localhost:5000/api/users/create/token?token=${bearer}`
+
+        postData(url, data)
+      .then((data) => {
+        if(data.error) {
+          console.log("error->" , data.error)
+        swal(data.error);
+        }else if(data.data) {
+        //    console.log("->: route to login page", data, data.data)
+//  window.location.href = "http://localhost:8080/reportaApp/ReportaApp/login.html";
+
+           }else{
+          console.log("You are not authorized");
+                 //   swal(data.data);
+               }
+       }).catch((err)=>{
+          console.log(err.message)
+ })
+
+   })
+
+  }
+  
 
 
-})
+
 
 
 })

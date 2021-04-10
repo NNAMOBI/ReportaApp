@@ -27,7 +27,7 @@
          localStorage.setItem('token', data.data.accessToken);// set the token for the session in the local storage       
     //redirect the user to the dashboard where he can view post after login successful 
        console.log("token:->", data.data.accessToken)
-        window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/orgDashboard.php"
+        window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/orgDashboard.html"
         }else {        
           
             console.log("route to home page");

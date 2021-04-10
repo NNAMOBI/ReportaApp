@@ -19,7 +19,7 @@ $( ":submit" ).click(function(event) {
       password,
       confirmPassword
     }
-    let url = `http://localhost:5000/api/authUser/token?token=${myParam}`;   //endpoint to be called
+    let url = `http://localhost:5000/api/authUser/token?token=${myParam}`;   //endpoint to be called to change password
 
     
       try {      
