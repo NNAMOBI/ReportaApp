@@ -19,6 +19,8 @@
 
 <!-- Custom styles for this template -->
 <link href="css/blog-home.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/home.css" type="text/css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
     <title>Dashboard - Reporta Admin</title>
 </head>
@@ -26,10 +28,50 @@
 
  <!-- body starts here -->
 
- <body class="sb-nav-fixed">
-
-         <?php include("navbar.php") ?>
+ <body >
+    <!-- nav bar starts here -->
+    <header> 
+        <div class="logo">
+            <h1 class="logo-design">R</h1>
+            <h1 class="logo-text"><span>reporta</span></h1>
+       </div> 
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+           <!-- <li><a href="login.html">Login</a> -->
+           </li>
+            <li>
+                <a href="#">About</a></li> 
         
+         <li>
+             <a href="#">Services</a></li>
+         <!--<li><a href="#">Sign Up</a></li>
+         <li><a href="">Login</a></li>-->
+         <li>
+         <a href="">
+             
+             <i class="fa fa-user"></i>
+            Logout
+            <!-- <i class="fa fa-chevron-down" style="font-size:.8em;"></i> -->
+           </a>
+           <!-- <ul>
+        
+            <li><a href="#">Admin</a></li>
+            <li><a href="#" class="logout">Logout</a></li>
+        
+        
+           </ul> -->
+        
+         </li>
+         </ul>
+      </header> 
+        <!-- Navbar-->
+        
+<!--         
+</div>
+    </nav> -->
+         <!-- nav bar ends here -->
+
+
         <!-- side nav starts here -->
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -93,7 +135,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
+                    <div class="sb-sidenav-footer" id="logged-in">
                         <div class="small">Logged in as:</div>
                     </div>
                 </nav>
@@ -104,7 +146,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Welcome Admin</h1>
+                        <h1 class="mt-4" id="welcome">Welcome Admin</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active" style="color:red;">YOUR DATA</li>
                         </ol>

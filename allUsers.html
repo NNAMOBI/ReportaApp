@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <!-- header for the admin page -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="/css/login.css" type="text/css">
+<link rel="stylesheet" href="/css/register.css" type="text/css">
+<link rel="stylesheet" href="assets/admin.css" type="text/css">
+<link href="css/styles.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/blog-home.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/home.css" type="text/css">
+         <title>All users</title>
+</head>
+<body>
+          <!--  nav starts here -->
+          <header> 
+            <div class="logo">
+                <h1 class="logo-design">R</h1>
+                <h1 class="logo-text"><span>reporta</span></h1>
+           </div> 
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+               <li><a href="login.html">Login</a>
+               </li>
+                <li>
+                    <a href="#">About</a></li> 
+            
+             <li>
+                 <a href="#">Services</a></li>
+             <!--<li><a href="#">Sign Up</a></li>
+             <li><a href="">Login</a></li>-->
+             <li>
+             <a href="">
+                 
+                 <i class="fa fa-user"></i>
+                Reporta
+                <i class="fa fa-chevron-down" style="font-size:.8em;"></i>
+               </a>
+               <ul>
+            
+                <li><a href="#">Admin</a></li>
+                <li><a href="#" class="logout">Logout</a></li>
+            
+            
+               </ul>
+            
+             </li>
+             </ul>
+          </header> 
+
+
+               <!-- side nav starts here -->
+          <!-- side nav starts here -->
+        <div id="layoutSidenav">
+          <div id="layoutSidenav_nav">
+              <nav class="sb-sidenav accordion" style="background-color: #EB5757; color: white"; id="sidenavAccordion">
+                  <div class="sb-sidenav-menu">
+                      <div class="nav">
+                          <div class="sb-sidenav-menu-heading" ; font-family:Verdana, Geneva, Tahoma, sans-serif">
+                              <a href="/home" style="color: white" >Back to Home page</a>
+                              </div>
+                          <a class="nav-link" href="/admin" style="color: white">
+                              <div class="sb-nav-link-icon" style="color: white"><i class="fas fa-tachometer-alt"></i></div>
+                              CDR
+                          </a>
+                          <div class="sb-sidenav-menu-heading" >Interface</div>
+                          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="" aria-controls="collapseLayouts" style="color: white">
+                              <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                              Manage User
+                              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                          </a>
+                          <div class="collapse" id="collapseLayouts"   aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                              <nav class="sb-sidenav-menu-nested nav">
+                                  <a class="nav-link" href="">All Users</a>
+                                  <a class="nav-link" id="create-user" href="">Create New User</a>
+                                
+
+                              </nav>
+                          </div>
+                          <a class="nav-link collapsed" href="#" data-toggle="collapse"  style="color: white"  data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                              <div class="sb-nav-link-icon" style="color: white"><i class="fas fa-book-open"></i></div>
+                              CDR
+                              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                          </a>
+                          <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                              <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                  <a class="nav-link" href="/api/admin/category/all/{{id}}"style="color: white" >
+                                      View Agents
+                                      <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                  </a>
+                                   
+                                  <a class="nav-link" href="/api/admin/category/create/{{id}}" style="color: white">
+                                      View Customers
+                                      <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                  </a>
+                                  <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                      <nav class="sb-sidenav-menu-nested nav">
+                                          <a class="nav-link" href="401.html">401 Page</a>
+                                          <a class="nav-link" href="404.html">404 Page</a>
+                                          <a class="nav-link" href="500.html">500 Page</a>
+                                      </nav>
+                                  </div>
+                              </nav>
+                          </div>
+                          <div class="sb-sidenav-menu-heading" >Addons</div>
+                          <a class="nav-link" href="charts.html"  style="color: white">
+                              <div class="sb-nav-link-icon"  ><i class="fas fa-chart-area"></i></div>
+                             Notifications
+                          </a>
+                          <a class="nav-link" href="tables.html"  style="color: white">
+                              <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                             E-mails
+                          </a>
+                      </div>
+                  </div>
+                  <div class="sb-sidenav-footer" id="logged-in">
+                      <div class="small">Logged in as:</div>
+                  </div>
+              </nav>
+          </div>
+
+    <!-- side bar end-->
+           <div class="container">
+            <h3 class="alert alert-dark p-3 text-center">All Users</h3>
+
+ <div class="row">
+    <div class="col-6 mx-auto">   <!--bootstrap-->
+        
+    
+    <!--third div  here-->
+
+    <table class="table table-bordered text-center border-success text-white">
+        <thead class="bg-primary">
+            <tr>  
+                 <th>id</th>   
+                 <th>name</th> 
+                 <th>email</th> 
+                 <th>phoneNo</th>  
+                 <th>status</th>        
+                 <th>Time Created</th>  
+                 <th>Time updated</th>            
+                   <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover bg-light text-dark category-list">
+           
+         <tr>
+                 <td>title</td>
+                 <td>True</td> 
+                 <th>name</th> 
+                 <th>email</th> 
+                 <th>phoneNo</th>  
+                 <th>status</th>        
+                 <th>Time Created</th>  
+                 <td class="d-flex justify-content-center">
+                    <a href="/api/admin/category/edit/{{this.id}}" class="btn btn-sm btn-warning mr-2">Edit User</a> <!--bootstrap-->
+                <form action="/api/admin/category/{{this.id}}?_Method=DELETE" method="POST">
+                <button class="btn btn-sm btn-danger" type="submit">Delete User</button>
+                </form>
+
+                 </td>
+                  
+                
+        </tr>
+     
+        </tbody>
+    </table>
+
+      <!-- side bar end-->
+
+
+</div>
+       <?php include("script.php") ?> 
+</body>
+</html>
