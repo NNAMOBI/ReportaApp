@@ -11,6 +11,16 @@
  }
 
 
+ function allUserFunction(e){
+  e.preventDefault();
+  console.log(" i have been clicked")
+  e.preventDefault();
+     console.log("redirect to the allUsers page")
+        window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/allUsers.html"
+
+ }
+
+
 window.addEventListener('load', function() {
     console.log('All assets are loaded')
     const bearer = localStorage.getItem('token')   //get token to create a session and authorization from the backend
@@ -20,6 +30,8 @@ window.addEventListener('load', function() {
    } else {
     console.log("There is a token")
     document.getElementById('create-user').addEventListener("click", myFunction)
+    document.getElementById('all-user').addEventListener("click", allUserFunction)
+
 
     const url = `http://localhost:5000/api/users/credentials/token?token=${bearer}`;   //endpoint to be called
          getData(url)
