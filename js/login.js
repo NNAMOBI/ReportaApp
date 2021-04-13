@@ -8,8 +8,7 @@
         ev.preventDefault();
         //jquery to select form input
           let email = document.querySelector('#log-form .email').value;
-          // let password = document.querySelector('#log-form .password').value;
-          let password = $('#log-form .password').val() 
+          let password = document.querySelector('#log-form .password').value
              console.log(email)
           let userData = {
             email,
@@ -29,7 +28,6 @@
        console.log("token:->", data.data.accessToken)
         window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/orgDashboard.html"
         }else {        
-          
             console.log("route to home page");
          window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/home.html"     
         }

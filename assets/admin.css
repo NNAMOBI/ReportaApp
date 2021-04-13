@@ -49,6 +49,11 @@
   box-sizing: border-box;
 }
 
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
