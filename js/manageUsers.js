@@ -1,7 +1,9 @@
-
 $(document).ready(function () {
- 
+
+      
+    console.log('All assets are loaded')
       const bearer = localStorage.getItem('token')   //get token to create a session and authorization from the backend
+     console.log(bearer);
      if(!bearer) {
          //redirect the user to the home page
       window.location.href = "http://localhost:8080/reportaApp/ReportaApp/home.html"; //route the user to home page if no token
@@ -14,7 +16,7 @@ $(document).ready(function () {
         .then((data) => {
           if(data.error) {
           swal(data.error);
-          
+
           }else if(data.data) {
              let table = document.querySelector('#users-table > tbody')
              console.log(table)
@@ -33,7 +35,27 @@ $(document).ready(function () {
                       }  
                       
                        table.appendChild(tr)
-                    
+                    //   $('#search-input').on('keyup', function(d){
+                    //     let value =  document.querySelector('#search-input').value; 
+                    //      console.log(value)
+                        // var data = searchTable(value, d)
+                       
+                              
+                       // function to search table
+                        //  function searchTable(value, data){
+                        // let filteredData = [];
+                        // for(let i=0; i<data.length; i++){
+                        //     value = value.toLowerCase()
+                        //     let name = data[i].name.toLowerCase();
+               
+                        //     if(name.includes(value)){
+                        //         filteredData.push(data[i])
+                        //     }
+                        // }
+                        // return filteredData;
+               
+                        //  }
+                        // })
                  })
             //function to the get keyup event
        
@@ -77,7 +99,8 @@ $(document).ready(function () {
             // throw `error with status ${response.status}`
             return ("You are not authorized")
           }
-          
+          console.log("-> ", response, response.status);
+          console.log("url->", response.url)
           return response.json(); // parses JSON response into native JavaScript objects
           
           }
