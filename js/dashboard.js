@@ -10,25 +10,21 @@
 
  }
 
-
+// function to redirect to all userspage
  function allUserFunction(e){
   e.preventDefault();
-  console.log(" i have been clicked")
-  e.preventDefault();
-     console.log("redirect to the allUsers page")
         window.location.href =  "http://localhost:8080/reportaApp/ReportaApp/allUsers.html"
 
  }
 
 
+
+
 window.addEventListener('load', function() {
-    console.log('All assets are loaded')
     const bearer = localStorage.getItem('token')   //get token to create a session and authorization from the backend
-   console.log(bearer);
    if(!bearer) {
     window.location.href = "http://localhost:8080/reportaApp/ReportaApp/home.html"; //route the user to home page if no token
-   } else {
-    console.log("There is a token")
+   } else {   
     document.getElementById('create-user').addEventListener("click", myFunction)
     document.getElementById('all-user').addEventListener("click", allUserFunction)
 
@@ -37,15 +33,20 @@ window.addEventListener('load', function() {
          getData(url)
          .then((data) => {
       if(data.error) {
-        console.log("error->" , data.error)
       swal(data.error);
        window.location.href = "http://localhost:8080/reportaApp/ReportaApp/home.html";  //redirect to home page 
       }else if(data.data) {
-         console.log("display data->:", data, data.data)
-         document.getElementById('welcome').innerHTML = `<h1>Welcome ${data.data.companyName} 
-                                                                       </h1><br/>
-                                                                       <h6>${data.data.email}</h6>`
-         document.getElementById('logged-in').innerHTML = `<h5>Logged in as ${data.data.companyName}</h5>`
+         const cdr = document.getElementById('cdr')
+         cdr.innerHTML = `<h6><span style="color: black; font-size: 25px">${data.data.cdrRecord.length}</span>   call details records</h6>` 
+         document.getElementById('agents').innerHTML = `<h6><span style="color: red; font-size: 25px">${data.data.cdrRecord.length}</span>   Agent</h6>`
+         document.getElementById('users').innerHTML = `<h6><span style="color: blue; font-size: 25px">${data.data.cdrRecord.length}</span>   Customers</h6>`
+         
+         document.getElementById('welcome').innerHTML = `<h1>Welcome ${data.data.userRecord.companyName} 
+                                                                     </h1><br/>
+                                                                       <h6>${data.data.userRecord.email}</h6>`
+         document.getElementById('logged-in').innerHTML = `<h5>Logged in as ${data.data.userRecord.companyName}</h5>`
+        
+         console.log(cdr)
 //  window.location.href = "http://localhost:8080/reportaApp/ReportaApp/login.html";
          }else{
         console.log("You are not authorized");

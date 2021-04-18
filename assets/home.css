@@ -211,14 +211,14 @@ header .menu-toggle{
 }
 
 .content .sidebar {
-   width: 30%;
+   width: 50%;
    float: left;
    /* border: 1px dashed green; */
    height: 300px;
 }
 
 .content .main-content {
-    width: 70%;
+    width: 50%;
     float: left;
     
 }
@@ -381,7 +381,12 @@ button{
   box-shadow:0 1px #CD4170 inset, 0 1px 2px #93284C;
 }
 
-
+.center {
+    background-color: #eab6b6;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+}
 
 
 
