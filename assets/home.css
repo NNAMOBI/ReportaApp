@@ -10,10 +10,6 @@ course:CMM004-Software Project Engineering
 
 *{
     box-sizing: border-box
-
-
-
-
 }
 
 
@@ -22,12 +18,7 @@ course:CMM004-Software Project Engineering
     display: block;
     width: 100%;
     font-size: 10px;
-    
-   
-
 }
-
-
 
 
 .clearfix::after {
@@ -194,7 +185,9 @@ header ul li a {
 
 header ul li a:hover {
  background:rgb(219, 189, 189);
+ color: white;
  transition: 0.5s;
+ text-decoration: none;
 }
 
 header .menu-toggle{
