@@ -27,14 +27,47 @@ course:CMM004-Software Project Engineering
   <title>Login</title>
      
  <!--Custom Styling-->
+ <link rel="stylesheet" href="assets/home.css">
  <link rel="stylesheet" href="assets/login.css">
  </head>
  <body>
-         <div class="container">
-         <div style="text-align: center; color: #EB5757; margin-top: 50px; margin-bottom: -80px; font-size: 100px; font-weight: bolder; font-family: 'Roboto Slab', serif;">
-          <a href="home.html" style="text-decoration: none;">R</a>
+    <header> 
+     <div class="logo">
+         <h1 class="logo-design">R</h1>
+         <h1 class="logo-text"><span>reporta</span></h1>
+    </div> 
+     <i class="fa fa-bars menu-toggle"></i>
+     <ul class="nav">
+        <li><a href="home.html">Home</a>
+        </li>
+        <li><a href="signup.html">Sign Up</a>
+        </li>
+         <li>
+             <a href="#">About</a></li> 
+     
+      <li>
+          <a href="#">Services</a></li>
+      <!--<li><a href="#">Sign Up</a></li>
+      <li><a href="">Login</a></li>-->
+      <li>
+      <a href="">
           
-         </div>
+          <i class="fa fa-user"></i>
+         Reporta
+         <i class="fa fa-chevron-down" style="font-size:.8em;"></i>
+        </a>
+        <ul>
+     
+         <li><a href="#">Admin</a></li>
+         <li><a href="#" class="logout">Logout</a></li>
+     
+     
+        </ul>
+     
+      </li>
+      </ul>
+   </header> 
+         <div class="container">
             <section class="register">
               <h1>Login</h1>
 
@@ -56,6 +89,11 @@ course:CMM004-Software Project Engineering
             </section>
           </div>
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+   
+   <!-- Custom Script -->
+   <script src="js/scripts.js"></script>
   <script src="js/login.js"></script>    <!--login script-->
 
  </body>
