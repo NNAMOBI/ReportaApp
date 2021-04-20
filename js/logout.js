@@ -1,6 +1,9 @@
-$( "#logout" ).click((req, res) => {
-    req.session.destroy(err => {
-      console.log(err);
-      res.redirect('/');
-    });
-  })
+
+
+const signout = document.getElementById('logout');
+
+signout.addEventListener('click', ()=> {
+  console.log('logging out');
+  sessionStorage.removeItem('token');
+  window.location.href =  "localhost:8080/reportaApp/ReportaApp/change.html"
+});

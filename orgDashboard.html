@@ -49,7 +49,7 @@
          <li>
          <a href="">
              
-             <i class="fa fa-user"></i>
+             <i id="logout" class="fa fa-user"></i>
             Logout
             <!-- <i class="fa fa-chevron-down" style="font-size:.8em;"></i> -->
            </a>
@@ -79,7 +79,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading" ; font-family:Verdana, Geneva, Tahoma, sans-serif">
-                                <a href="/home" style="color: white" >Back to Home page</a>
+                                <a href="/reportaApp/ReportaApp/home.html" style="color: white" >Back to Home page</a>
                                 </div>
                             <a class="nav-link" href="/admin" style="color: white">
                                 <div class="sb-nav-link-icon" style="color: white"><i class="fas fa-tachometer-alt"></i></div>
@@ -99,31 +99,7 @@
 
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse"  style="color: white"  data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <div class="sb-nav-link-icon" style="color: white"><i class="fas fa-book-open"></i></div>
-                                CDR
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link" href="/api/admin/category/all/{{id}}"style="color: white" >
-                                        View Agents
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                     
-                                    <a class="nav-link" href="/api/admin/category/create/{{id}}" style="color: white">
-                                        View Customers
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
-                                </nav>
-                            </div>
+                            
                             <div class="sb-sidenav-menu-heading" >Addons</div>
                             <a class="nav-link" href="charts.html"  style="color: white">
                                 <div class="sb-nav-link-icon"  ><i class="fas fa-chart-area"></i></div>
@@ -153,27 +129,27 @@
                         <div class="row">
                             <div class="col-xl-4 col-md-6">
                                 <div class="card bg-primary text-white mb-4 color">
-                                    <div class="card-body">Call details records</div>
+                                    <div class="card-body" id="cdr">Call details records</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="" id="view-cdr">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Agents</div>
+                                    <div class="card-body"id="agents">Agents</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="" id="view-Agents">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Customers</div>
+                                    <div class="card-body" id="users">Customers</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="" id="view-Customers">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -207,43 +183,39 @@
 <thead class="bg-success text-center">
 <tr class="text-white">  
    <th>Call_id</th>
-   <th>Reason_terminated</th>                
-    <th>Time_start</th>
-    <th>Time_end</th>
-    <th>Time-answered</th>
-    <th>From_no</th>
-    <th>To_no</th>
-    <th>From_dn</th>
-    <th>To_dn</th>
+   <th>Reason terminated</th>                
+    <th>Time start</th>
+    <th>Time end</th>
+    <th>Time answered</th>
+    <th>From no</th>
+    <th>To no</th>
+    <th>duration</th>   
     <th>Date</th>
-   <th>Action</th> 
+   <!-- <th>Action</th>  -->
    
 </tr>
 </thead>
 <tbody class="text-center">
 
 <tr>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
+     <td>1</td>
+     <td>phone has been fixed</td>
+     <td>9:43:21</td>
+     <td>12:43:23</td>
+     <td>10:43:21</td>
+     <th>833773773</th> 
+     <th>8272727939</th>
+     <th>6:43:21</th>
+     <th>1/12/21</th>
+     <!-- <th>  -->
 
-   <td></td>
-
-
-     <th></th> 
-     <th></th>
-     <th></th>
-     <th></th>
-     <th> 
-
-     <td class="d-flex">
+     <!-- <td class="d-flex">
       <a href="/api/user/posts/edit/{{this.id}}" class="btn btn-sm btn-warning mr-2">Edit Post</a> <!--bootstrap-->
-  <form action="/api/admin/post/delete/{{this.id}}?newMethod=DELETE" method="POST">
-  <button class="btn btn-sm btn-danger" type="submit">Delete Post</button>
-  </form>
+  <!-- <form action="/api/admin/post/delete/{{this.id}}?newMethod=DELETE" method="POST"> -->
+  <!-- <button class="btn btn-sm btn-danger" type="submit">Delete Post</button> -->
+  <!-- </form> --> 
 
-   </td>
+   <!-- </td> -->
 
 
      </th>
@@ -288,6 +260,10 @@
     <script src="assets/demo/chart-bar-demo.js"></script>
    <script  type="text/javascript" src="js/dashboard.js"></script>
    <script  type="text/javascript" src="js/allUsers.js"></script>
+   <script  type="text/javascript" src="js/logout.js"></script>
+   <script  type="text/javascript" src="js/viewCdr.js"></script>
+
+   
 
 </body>
 </html>
